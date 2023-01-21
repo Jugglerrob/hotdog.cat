@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <style>
+            body{
+                background: url("./hotdog.webp");
+                background-repeat: repeat;
+                background-size: 100px 100px;
+                -webkit-animation: scrolling .75s linear infinite;
+                -moz-animation: scrolling .75s linear infinite;
+                -o-animation: scrolling .75s linear infinite;
+                animation: scrolling .75s linear infinite;
+            }
+
+            @-webkit-keyframes scrolling {
+              from{
+                  background-position: 0 0;
+              }
+              to{
+                  background-position: -200px 100px;
+              }
+            }
+            
+            .full-height {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				width: 100%; /*customize to your needs 100%*/
+				height: 100%; /*customize to your needs*/
+			}
+            
+			.container img
+			{
+			  max-width: 500px;
+			  max-height: 500px;
+			}
+            
+            .container
+            {
+                text-align: center;
+            }
+            
+            h1 {
+                font-family: sans-serif;
+                color: #7A2F30;
+            }
+        </style>
+    </head>
+	<body>
+		<div class="full-height">
+            <div class="container">
+                <img  src="./cat.png" />
+                <h1>visca el gat</h1>
+            </div>
+		</div>
+	</body>
+</html>
